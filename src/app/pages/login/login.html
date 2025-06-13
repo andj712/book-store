@@ -1,1 +1,30 @@
-<p>login works!</p>
+<div class="login-container">
+  <h2>Login</h2>
+  <form (ngSubmit)="onLogin()" #loginForm="ngForm" class="login-form">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        required
+        [(ngModel)]="email"
+        placeholder="Unesite email"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="password">Lozinka:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        [(ngModel)]="password"
+        placeholder="Unesite lozinku"
+      />
+    </div>
+
+    <button type="submit">Prijavi se</button>
+  </form>
+</div>
