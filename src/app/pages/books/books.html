@@ -2,7 +2,7 @@
 
 <div class="search-container">
   <input [(ngModel)]="query" placeholder="Pretraži knjige..." />
-  <button (click)="search()">Pretraži</button>
+  <app-button [text]="'Pretraži'" (click)="search()"></app-button>
 </div>
 
 <div class="book-list">

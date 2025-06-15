@@ -1,6 +1,4 @@
 
-export class Button {
-}
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -11,8 +9,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './button.html',
   styleUrl: './button.scss'
 })
-export class ButtonComponent {
+export class Button {
   @Input() text: string = 'Klikni';
   @Input() type: 'button' | 'submit' = 'button';
-  @Input() color: string = '#007bff'; // plava
+  @Input() color: string = '#007bff'; 
 }

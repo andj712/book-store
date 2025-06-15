@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { BookService } from '../../services/book.services';
 import { FormsModule } from '@angular/forms';
 import { Navbar } from '../../components/navbar/navbar';
+import { Button } from '../../components/button/button';
 
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [CommonModule, FormsModule, Navbar],
+  imports: [CommonModule, FormsModule, Navbar,Button],
   templateUrl: './books.html',
   styleUrl: './books.scss'
 })
