@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+
+<div class="search-container">
+  <input [(ngModel)]="query" placeholder="Pretraži knjige..." />
+  <button (click)="search()">Pretraži</button>
+</div>
+
+<div class="book-list">
+  <div class="book" *ngFor="let book of books">
+    <h4>{{ book.volumeInfo.title }}</h4>
+    <p>{{ book.volumeInfo.authors?.join(', ') }}</p>
+    <img
+      *ngIf="book.volumeInfo.imageLinks"
+      [src]="book.volumeInfo.imageLinks.thumbnail"
+      alt="naslovna"
+    />
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+  input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+
+  .book {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fafafa;
+
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  }
+}
