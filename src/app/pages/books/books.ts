@@ -5,12 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { Navbar } from '../../components/navbar/navbar';
 import { Button } from '../../components/button/button';
 import { InputField } from '../../components/input-field/input-field';
+import { ShadowOnHover } from '../../directives/shadow-on-hover';
 
 
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [CommonModule, FormsModule, Navbar,Button,InputField],
+  imports: [CommonModule, FormsModule, Navbar,Button,InputField,ShadowOnHover],
   templateUrl: './books.html',
   styleUrl: './books.scss'
 })

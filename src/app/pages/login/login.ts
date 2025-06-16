@@ -4,12 +4,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Button } from '../../components/button/button';
 import { InputField } from '../../components/input-field/input-field';
+import { ShadowOnHover } from '../../directives/shadow-on-hover';
 
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule,Button,InputField],
+  imports: [CommonModule, FormsModule,Button,InputField,ShadowOnHover],
   templateUrl: './login.html',
   styleUrl: './login.scss'
 })
@@ -23,7 +24,7 @@ export class Login {
 
   onLogin() {
     if (this.email === 'admin' && this.password === 'admin') {
-      this.router.navigate(['/home']);
+      this.router.navigate(['/books']);
     } else {
       alert('Invalid credentials');
     }
