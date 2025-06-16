@@ -1,0 +1,20 @@
+.contact-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.message-textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+}

@@ -1,2 +1,41 @@
 <app-navbar></app-navbar>
 
+<div class="contact-container" appShadowOnHover>
+  <h2>Kontaktirajte nas</h2>
+
+  <form (ngSubmit)="submitForm()" #contactForm="ngForm">
+    <app-input-field
+      [(model)]="name"
+      placeholder="Ime i prezime"
+      type="text"
+      required
+      name="name"
+      ngModel>
+    </app-input-field>
+
+    <app-input-field
+      [(model)]="email"
+      placeholder="Email"
+      type="email"
+      required
+      name="email"
+      ngModel>
+    </app-input-field>
+
+    <div class="input-wrapper">
+      <label for="message">Poruka</label>
+      <textarea
+        id="message"
+        name="message"
+        [(ngModel)]="message"
+        required
+        rows="5"
+        class="message-textarea"
+      ></textarea>
+    </div>
+
+    <app-button text="Pošalji" type="submit"></app-button>
+  </form>
+
+  <p class="success-message" *ngIf="formSubmitted">Hvala! Vaša poruka je poslata.</p>
+</div>
