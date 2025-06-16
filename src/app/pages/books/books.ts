@@ -4,11 +4,13 @@ import { BookService } from '../../services/book.services';
 import { FormsModule } from '@angular/forms';
 import { Navbar } from '../../components/navbar/navbar';
 import { Button } from '../../components/button/button';
+import { InputField } from '../../components/input-field/input-field';
+
 
 @Component({
   selector: 'app-books',
   standalone: true,
-  imports: [CommonModule, FormsModule, Navbar,Button],
+  imports: [CommonModule, FormsModule, Navbar,Button,InputField],
   templateUrl: './books.html',
   styleUrl: './books.scss'
 })
