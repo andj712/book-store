@@ -6,6 +6,7 @@ import { Navbar } from '../../components/navbar/navbar';
 import { Button } from '../../components/button/button';
 import { InputField } from '../../components/input-field/input-field';
 import { ShadowOnHover } from '../../directives/shadow-on-hover';
+import { TrimTextPipe } from '../../pipes/trim-text-pipe';
 
 @Component({
   selector: 'app-books',
@@ -17,6 +18,7 @@ import { ShadowOnHover } from '../../directives/shadow-on-hover';
     Button,
     InputField,
     ShadowOnHover,
+    TrimTextPipe,
   ],
   templateUrl: './books.html',
   styleUrl: './books.scss',

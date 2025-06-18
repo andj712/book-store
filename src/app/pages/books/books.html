@@ -13,7 +13,7 @@
 
 <div class="book-list">
   <div class="book" *ngFor="let book of books">
-    <h4>{{ book.volumeInfo.title }}</h4>
+    <h4>{{ book.volumeInfo.title | trimText}}</h4>
     <p>{{ book.volumeInfo.authors?.join(', ') }}</p>
     <img
       *ngIf="book.volumeInfo.imageLinks"
