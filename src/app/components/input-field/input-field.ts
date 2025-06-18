@@ -13,12 +13,21 @@ export class InputField {
   @Input() placeholder: string = '';
   @Input() type: string = 'text';
   @Input() model: string = '';
+    @Input() lowercase: boolean = false;
+
 
   @Output() modelChange = new EventEmitter<string>();
 
   onInput(event: Event) {
-    const input = event.target as HTMLInputElement;
-    this.model = input.value;
-    this.modelChange.emit(this.model);
+  const input = event.target as HTMLInputElement;
+  let value = input.value;
+
+  if (this.lowercase) {
+    value = value.toLowerCase();  
+    input.value = value;          
   }
+
+  this.model = value;
+  this.modelChange.emit(this.model);
+}
 }

@@ -2,14 +2,16 @@
   <h2>Login</h2>
   <form (ngSubmit)="onLogin()" #loginForm="ngForm" class="login-form">
      
-    <app-input-field
-        [(model)]="email"
-        placeholder="Unesite email"
-        type="email"
-        required
-        appShadowOnHover
-        >
-    </app-input-field>
+   <app-input-field
+  [(model)]="email"
+  placeholder="Unesite email"
+  type="email"
+  [lowercase]="true"
+  required
+  appShadowOnHover
+>
+</app-input-field>
+
 
    
 
