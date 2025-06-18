@@ -2,18 +2,10 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'lowerCaseInputPipe',
-    standalone: true,
-
+  standalone: true,
 })
-
 export class LowerCaseInputPipePipe implements PipeTransform {
-
-     transform(value: string): string {
+  transform(value: string): string {
     return value ? value.toLowerCase() : '';
   }
-  }
-
-
-
-
-
+}

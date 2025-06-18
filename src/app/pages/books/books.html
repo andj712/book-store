@@ -1,11 +1,13 @@
 <app-navbar></app-navbar>
 
 <div class="search-container">
-<app-input-field
-  [(model)]="query"
-  placeholder="Pretraži knjige..."
-  type="text" appShadowOnHover>
-</app-input-field>
+  <app-input-field
+    [(model)]="query"
+    placeholder="Pretraži knjige..."
+    type="text"
+    appShadowOnHover
+  >
+  </app-input-field>
   <app-button [text]="'Pretraži'" (click)="search()"></app-button>
 </div>
 

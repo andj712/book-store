@@ -10,8 +10,14 @@ import { Navbar } from '../../components/navbar/navbar';
   selector: 'app-contact',
   templateUrl: './contact.html',
   styleUrls: ['./contact.scss'],
-  imports: [CommonModule, FormsModule,Button,InputField,ShadowOnHover,Navbar],
-
+  imports: [
+    CommonModule,
+    FormsModule,
+    Button,
+    InputField,
+    ShadowOnHover,
+    Navbar,
+  ],
 })
 export class Contact {
   name: string = '';
@@ -25,7 +31,7 @@ export class Contact {
       console.log('Poruka poslata:', {
         ime: this.name,
         email: this.email,
-        poruka: this.message
+        poruka: this.message,
       });
 
       this.name = '';
@@ -34,5 +40,3 @@ export class Contact {
     }
   }
 }
-
-

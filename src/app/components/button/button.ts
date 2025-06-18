@@ -1,4 +1,3 @@
-
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,10 +6,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './button.html',
-  styleUrl: './button.scss'
+  styleUrl: './button.scss',
 })
 export class Button {
   @Input() text: string = 'Klikni';
   @Input() type: 'button' | 'submit' = 'button';
-  @Input() color: string = '#007bff'; 
+  @Input() color: string = '#007bff';
 }

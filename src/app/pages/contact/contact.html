@@ -11,20 +11,19 @@
       required
       name="name"
       ngModel
-       appShadowOnHover
->
+      appShadowOnHover
+    >
     </app-input-field>
 
- <app-input-field
-  [(model)]="email"
-  placeholder="Unesite email"
-  type="email"
-  [lowercase]="true"
-  required
-  appShadowOnHover
->
-</app-input-field>
-
+    <app-input-field
+      [(model)]="email"
+      placeholder="Unesite email"
+      type="email"
+      [lowercase]="true"
+      required
+      appShadowOnHover
+    >
+    </app-input-field>
 
     <div class="input-wrapper">
       <label for="message">Poruka</label>
@@ -35,13 +34,14 @@
         required
         rows="5"
         class="message-textarea"
-          appShadowOnHover
-
+        appShadowOnHover
       ></textarea>
     </div>
 
-    <app-button text="Pošalji" type="submit" ></app-button>
+    <app-button text="Pošalji" type="submit"></app-button>
   </form>
 
-  <p class="success-message" *ngIf="formSubmitted">Hvala! Vaša poruka je poslata.</p>
+  <p class="success-message" *ngIf="formSubmitted">
+    Hvala! Vaša poruka je poslata.
+  </p>
 </div>

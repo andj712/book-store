@@ -6,19 +6,16 @@ import { Button } from '../../components/button/button';
 import { InputField } from '../../components/input-field/input-field';
 import { ShadowOnHover } from '../../directives/shadow-on-hover';
 
-
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule, FormsModule,Button,InputField,ShadowOnHover],
+  imports: [CommonModule, FormsModule, Button, InputField, ShadowOnHover],
   templateUrl: './login.html',
-  styleUrl: './login.scss'
+  styleUrl: './login.scss',
 })
 export class Login {
   email: string = '';
   password: string = '';
- 
-
 
   constructor(private router: Router) {}
 
